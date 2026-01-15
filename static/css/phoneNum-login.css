@@ -1,0 +1,308 @@
+*, :after, :before
+ {
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+}
+
+
+.styled__NewMemberShipContainer{
+        position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.styled__NewMemberShipContainerInner{
+    
+    padding: 40px 16px;
+        max-width: 1080px;
+
+            flex: 1 1 0%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 20px 16px;
+    box-sizing: border-box;
+}
+
+.styled__LoginWrap{
+    flex: 1 1 0px;
+}
+
+.styled__BgWrap{
+display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 50%;
+        height: 100%;
+                background-image: url('../images/햇살장터\ 이메일로그인\ 이미지.png');
+        background-size: cover;
+        background-position: center center;
+}
+
+a, div {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+.styled__LoginWrapInner{
+    margin: 0px;
+        max-width: 414px;
+        width: 100%;
+}
+
+.SignIn__EmailTitle{
+            margin-bottom: 50px;
+        font-size: 24px;
+        text-align: left;
+}
+
+blockquote, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
+    margin: 0;
+}
+
+.StyledTBB__FormWrapper-sc{
+        text-align: left;
+    margin: 0px 0px 10px;
+           font-size: 12px;
+    font-weight: 500;
+}
+
+.StyledTBB__FormLabel-sc{
+ 
+        color: rgb(61, 61, 61);
+    margin: 0px 0px 10px;
+
+}
+
+.Input__InputWrapper-sc{
+border: 1px solid rgb(228, 228, 228);
+    color: rgb(13, 13, 13);
+    background: white;
+    padding: 0px 12px;
+    max-height: 44px;
+    min-width: 100px;
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    -webkit-box-align: center;
+    align-items: center;
+  
+    }
+
+    .Input__InnerInput{
+            width: 100%;
+    background: transparent;
+    border: 0px;
+    padding: 11px 0px;
+    box-sizing: border-box;
+    height: 100%;
+    outline: none;
+    margin: 0px;
+    appearance: none !important;
+    }
+
+    .StyledTBB__FormWrapper-sc{
+            text-align: left;
+    margin: 0px 0px 10px;
+    }
+
+
+.StyledTBB__FormLabel-sc{
+    color: rgb(61, 61, 61);
+    margin: 0px 0px 10px;
+    }
+
+.Input__InputWrapper-sc{
+        border: 1px solid rgb(228, 228, 228);
+    color: rgb(13, 13, 13);
+    background: white;
+    padding: 0px 12px;
+    max-height: 44px;
+    min-width: 100px;
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.Input__InputWrapper-sc input {
+    padding: 13px 0px;
+}
+
+.Input__InnerInput-sc{
+        width: 100%;
+    background: transparent;
+    border: 0px;
+    padding: 11px 0px;
+    box-sizing: border-box;
+    height: 100%;
+    outline: none;
+    margin: 0px;
+    appearance: none !important;
+}
+
+.LoginButtonMargin{
+    margin-top: 60px;
+}
+
+.SolidButton__Button-sc{
+    margin-top: 30px;
+        border-radius: 1px;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+
+        width: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 52px;
+    white-space: nowrap;
+    border-radius: 1px;
+    margin: 0px;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0px 24px;
+    background-color: rgb(248, 100, 83);
+    color: white;
+}
+/* ------------------------------------------------ */
+.styled__NewMemberShipContainerInner{
+flex: 1 1 0%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0px auto;
+    padding: 20px 16px;
+    box-sizing: border-box;    
+}
+
+.SocialMembershipMenu__Wrapper{
+    
+            margin-top: 60px;
+        text-align: center;
+}
+
+
+.styled__Divider{
+    padding: 10px 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.styled__Divider > span {
+    position: relative;
+    padding: 16px;
+    color: rgb(158, 158, 158);
+    font-size: 12px;
+}
+
+.styled__Divider > span::before, .styled__Divider > span::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    top: 50%;
+    width: 5000px;
+}
+
+.styled__Divider > span::after {
+    left: 100%;
+}
+
+.styled__Divider > span::before {
+    right: 100%;
+}
+
+.SoicalLoginButton{
+ 
+        /* height: auto;
+        padding: 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer; */
+
+        margin-right: 20px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Icon__SVGICON{
+    font-size: 44px;
+    
+    
+}
+
+
+.Icon__SVGICON svg{
+
+    width: 1em;
+    height: 1em;
+
+    
+    
+}
+
+
+.SignIn__MenuContainer{
+        display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 50px;
+}
+
+.AccountSwitchPrompt__Wrapper{
+display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 16px;
+    color: rgb(28, 28, 28);
+    }
+
+    .PlainNavLink__Wrapper{
+            font-size: 13px;
+    font-weight: normal;
+    line-height: 120%;
+    }
+
+   .PlainNavLink__Wrapper > a {
+    color: rgb(61, 61, 61);
+    text-decoration: underline;
+}
+
+.AccountSwitchPrompt__MenuDivider{
+        width: 1px;
+    height: 12px;
+    background-color: rgb(228, 228, 228);
+}
