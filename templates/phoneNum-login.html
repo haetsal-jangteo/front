@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login-page</title>
-    <link rel="stylesheet" href="../static/css/login.css">
+    <title>phoneNum-login</title>
+       <link rel="stylesheet" href="../static/css/phoneNum-login.css">
 </head>
 <body>
     <div class="styled__NewMemberShipContainer">
-                        
-                    </div>
-                </button>
-            </div>
-        </div> 
-        <div class="LoginHeader__LoginHeader"></div>
         <div class="styled__NewMemberShipContainerInner">
             <div class="styled__LoginWrap">
                 <div class="styled__LoginWrapInner">
-                    <div class="styled__Title">
-                        <p class="SignIn__KakaoLoginSubTitle">간편하게 로그인하고</p>
-                        <p class="styled__KakaoLoginTitle">시장 골목마다 숨겨진  <br>보물 같은 상품을 만나보세요</p>
-                    </div>
-                    <!-- Kakao API -->
-                    <button class="styled__KakaoButton" data-state="closed">
-                        <div class="kakaoIcon">
-                            <svg><path fill-rule="evenodd" clip-rule="evenodd" d="M13 3.25C6.99238 3.25 2.16663 6.99718 2.16663 11.5825C2.3636 14.7381 4.33329 17.4498 7.18935 18.6332L6.15526 22.3803C6.10602 22.4789 6.15526 22.6269 6.25375 22.6757C6.35223 22.7748 6.5492 22.7748 6.64769 22.6757L11.0303 19.7672C11.6704 19.8658 12.3106 19.9151 13 19.9151C18.9583 19.9151 23.8333 16.1679 23.8333 11.5825C23.8333 6.99718 19.0075 3.25 13 3.25" fill="black" fill-opacity="0.9"></path></svg>
+                    <h3 class="SignIn__EmailTitle">핸드폰으로 로그인</h3>
+                    <form autocomplete="on">
+                        <div class="StyledTBB__FormWrapper-sc">
+                            <div class="StyledTBB__FormLabel-sc">핸드폰 번호</div>
+                            <div class="StyledTBB__FormContent">
+                                <span class="Input__InputWrapper-sc">
+                                     <!--핸드폰 번호 입력  -->
+                                    <input type="text" inputmode="email" placeholder="핸드폰 번호를 입력해주세요" autocapitalize="off" autocomplete="email" class="Input__InnerInput" value>
+                                </span> 
+                            </div>
                         </div>
-                        카카오로 로그인
-                    </button>
-                    <!-- Business page -->
-                      <button class="styled__BusinessButton" data-state="closed">
-                        <div class="BusinessIcon">
-                            
+                        <div class="StyledTBB__FormWrapper-sc">
+                            <div class="StyledTBB__FormLabel-sc">비밀번호</div>
+                            <div class="StyledTBB__FormContent-sc">
+                                <span class="Input__InputWrapper-sc">
+                                    <!-- 비밀번호 입력 -->
+                                    <input type="password" placeholder="비밀번호를 입력해주세요" autocapitalize="off" autocomplete="current-password" class="Input__InnerInput-sc">
+                                </span>
+                            </div>
                         </div>
-                        사업자 로그인
-                    </button>
-                    <div class="SocialMembershipMenu__Wrapper">
+                        <!-- 로그인 클릭 -->
+                        <div class="LoginButtonMargin"><button class="SolidButton__Button-sc" color="mainEditorP80" type="submit"><span>로그인</span></button></div>
+                    </form>
+                    <!-- ----------------------------------------------- -->
+                                        <div class="SocialMembershipMenu__Wrapper">
                         <div class="styled__Divider">
                             <span>다른 방법으로 로그인</span>
                         </div>
@@ -54,6 +54,8 @@
                         <!-- 이메일 login page -->
                         <button class="SoicalLoginButton">
                             <div name="mailCircle" class="Icon__SVGICON">
+                                <!-- <svg width="34" height="34" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="14.875" fill="#D0D0D0"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M24.5557 10.8608H9.44458V12.0886H24.5557V10.8608ZM24.5557 12.0887L17.0001 17.8183L9.44458 12.0887H24.5557Z" fill="white"></path><path d="M20.1483 16.9997L24.5557 20.2737L24.5557 13.7256L20.1483 16.9997Z" fill="white"></path><path d="M13.852 16.9997L9.44458 20.2737L9.44458 13.7256L13.852 16.9997Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17.0001 19.4554L19.1589 17.8184L24.5557 21.9109L24.5557 23.1387H9.44458V21.9109L14.8414 17.8184L17.0001 19.4554Z" fill="white"></path>
+                                </svg> -->
                                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
                                  <circle cx="17" cy="17" r="14.875" fill="#D0D0D0"></circle>
                                 <rect x="12" y="9" width="10" height="16" rx="1.5" fill="white" stroke="white" stroke-width="0.5"/>
@@ -64,21 +66,20 @@
                         </button>
                     </div>
                     <div class="SignIn__MenuContainer">
-                        <!-- 계정찾기, 회원가입 page -->
+                        <!-- 계정찾기, 회원가입, 비밀번호 재설정 page -->
                         <div class="AccountSwitchPrompt__Wrapper">
                             <span class="PlainNavLink__Wrapper"><a>계정찾기</a></span>
                             <div class="AccountSwitchPrompt__MenuDivider"></div>
                             <span class="PlainNavLink__Wrapper"><a>회원가입</a></span>
+                            <div class="AccountSwitchPrompt__MenuDivider"></div>
+                            <span class="PlainNavLink__Wrapper"><a>비밀번호 재설정</a></span>
                         </div>
-                    </div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
-            <div class="styled__BgWrap">
-                  
-            </div>
+            <div class="styled__BgWrap"></div>
         </div>
     </div>
-    <!--ctrl + / -->
-
 </body>
 </html>
