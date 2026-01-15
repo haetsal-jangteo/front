@@ -1,6 +1,4 @@
-.fEJXaQ {
-    background-color: white;
-}
+
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
@@ -32,45 +30,13 @@ html {
     tab-size: 4;
 }
 
-.cXHShl {
-        padding: 0px 0px 88px;
-}
-.cXHShl {
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    min-height: 400px;
-    padding: 0px 0px 64px;
-    overflow-x: hidden;
-}
-.bOjKOH {
-        max-width: 1080px;
-        margin: 0px auto;
-    }
-.bOjKOH {
-        max-width: 1160px;
-    }
-.bOjKOH {
-    width: 100%;
-}
+
+
 a, div {
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
-/*img alt*/
-.apple {
-    width: 120px;
-    margin-right: 24px;
-}
 
-.apple {
-    width: 100px;
-    border-radius: 8px;
-    margin-right: 20px;
-}
 img {
     border: 0;
 }
@@ -102,17 +68,7 @@ a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
 }
-.elvbNb {
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    user-select: none;
-    padding: 24px 0px;
-}
+
 div {
     display: block;
     unicode-bidi: isolate;
@@ -137,3 +93,156 @@ html {
     box-sizing: border-box;
 }
 
+
+/*MainLayout__Wrapper background*/
+.background {
+    background-color: white;
+}
+
+
+/*Project IntroWrapper*/
+.Wrapper {
+    width: 1127px;
+    display: flex;               
+    justify-content: flex-start; 
+    flex-wrap: nowrap;           
+    align-items: flex-start;  
+    padding: 38px 0px 26px;      
+    user-select: none;
+    margin: 0 auto; 
+}
+
+/*Project__Title apple*/
+.apple2 {       
+        font-weight: bold;
+        color: rgb(28, 28, 28);
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 132%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+
+/*Container__Container Wrap*/
+.Wrap1{
+    max-width: 1135px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.Wrap2{
+    padding: 0px 0px 88px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 0px 0px 64px;
+    overflow-x: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*Project__ContentsWrapper title*/
+.title {
+    margin-top: 40px;       
+
+}
+
+/*Project__Container price*/
+.price{
+    width: auto;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-bottom: 12.5px;
+    padding-top: 117.5px;
+    margin-left: auto;
+}
+
+/*img alt="사과 이미지"*/
+.apple {
+    width: 176px;
+    border-radius: 8px;
+    margin-right: 20px;
+    height: auto;
+    max-width: 100%;
+    }
+/*MoneyInfo__Account count*/
+.count{ 
+    color: rgb(84, 84, 84);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 120%;
+    margin-right: 6px;
+}
+
+
+/*MainLayout__Wrapper background*/
+.background{
+    background-color: white;
+}
+
+/*Info_Box_Wrap Box*/
+.Box{   
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 4px;
+    padding: 20px; 
+    margin-bottom: 20px;    
+}
+
+/*Info_Box Header*/
+.Header{
+    margin-bottom: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+/*Info_Box HeaderTitle*/
+.HeaderTitle{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 120%;
+    color: rgb(28, 28, 28);
+}
+
+/*styled__InfoItem Item*/
+.Item{
+    gap: 85px;
+    margin: 0px;
+    display: flex;
+}
+
+/*styled__Info Title*/
+.Title{   
+    flex: 0 0 137px;
+    color: rgb(84, 84, 84);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 120%;    
+}
+
+/*styled__Info ContentWrap*/
+.ContentWrap{
+    margin: 0px;
+    flex: 1 1 auto;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 120%;
+    color: rgb(61, 61, 61);
+}
+
+/*img  alt"QR 코드*/
+.qrcode{
+    width: 100px;
+    margin: 30px 0 30px 0;
+}
