@@ -8,13 +8,37 @@ body {
     margin: 0;
 }
 
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-size: 100%;
+    font-variation-settings: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+button, input:where([type=button]), input:where([type=reset]), input:where([type=submit]) {
+    background-color: transparent;
+    background-image: none;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+    vertical-align: middle;
+}
+
 a, div {
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
-/* 검색 부분 */
-
+input[type=submit] {
+    display: none;
+}
 
 /* 헤더 부분 */
 .Header-Layout {
@@ -50,6 +74,7 @@ a, div {
     justify-content: space-between;
 }
 
+/* 헤더 상단 부분 */
 .UpperContent-LeftContent {
     display: flex;
     align-items: center;
@@ -86,4 +111,265 @@ a, div {
     background: rgb(240, 240, 240);
     color: rgb(158, 158, 158);
     outline: none; 
+}
+
+.searchbar-iconwrap {
+    position: absolute;
+    right: 12px;
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar-iconwrap svg {
+    color: black;
+}
+
+.UpperContent-RightContent {
+    gap: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UpperContent-items-button {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 120%;
+    color: rgb(28, 28, 28);
+}
+
+.UpperContent-items-icon {
+    display: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.UpperContent-RightContent svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.UpperContent-items-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.UserProfile-Button-Wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 40px;
+    background: transparent;
+    padding: 4px 6px 4px 4px;
+}
+
+.onlogin {
+    background: rgb(248, 248, 248);
+    padding: 4px 6px 4px 4px;
+}
+
+.UserProfile-Button-Container {
+    position: relative;
+    min-width: 30px;
+    max-height: 44px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 120%;
+    color: rgb(28, 28, 28);
+}
+
+.UserProfile-Button-Container img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+/* 헤더 하단 부분 */
+.Header-BottomContent {
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 52px;
+    z-index: 300;
+}
+
+.BottomContent-Navigation {
+    max-width: 1160px;
+    padding: 0px;
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 52px;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BottomContent-Category-Section {
+    gap: 30px;
+    padding: 0px;
+
+    position: relative;
+    display: flex;
+    gap: 20px;
+    padding: 0px 16px;
+    width: 100%;
+    min-height: 52px;
+    align-items: center;
+    flex-wrap: nowrap;
+    user-select: none;
+    overflow-x: auto;
+}
+
+.Category-Section-Region {
+    min-height: 52px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 120%;
+    color: rgb(28, 28, 28);
+    cursor: pointer;
+}
+
+.Category-Section-Region:hover {
+    color: rgb(254, 95, 76);
+    transition: 0.2s ease-in-out;
+}
+
+.Category-Section-Category {
+    white-space: nowrap;
+    min-height: 52px;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 120%;
+    color: rgb(28, 28, 28);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.Category-Section-Category:hover {
+    color: rgb(254, 95, 76);
+    transition: 0.2s ease-in-out;
+}
+
+.Category-Section-Category::after {
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    content: " ";
+    opacity: 0;
+    width: calc(100% + 6px);
+    height: 2px;
+    background: black;
+    animation: 0.3s ease-in-out 0s 1 normal forwards running eclZLu;
+}
+
+.Header-BottomExtended-Region {
+    width: calc(100% + 40px);
+
+    overflow: hidden;
+    margin-top: 52px;
+    position: absolute;
+    display: flex;
+    height: auto;
+    max-height: 600px;
+    transition: max-height 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    z-index: 700;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 7px;
+    top: 60px;
+}
+
+.BottomExtended-Region-Container {
+    position: relative;
+    width: 100%;
+    max-width: 1160px;
+}
+
+.BottomExtended-Region-Wrapper {
+    padding: 40px 0px 30px;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    overflow-x: auto;
+}
+
+.BottomExtended-Region-Group {
+    flex: 1 0 20%;
+    flex-direction: column;
+    display: flex;
+}
+
+.BottomExtended-Region-Item {
+    flex-direction: row;
+    height: 32px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    display: flex;
+    flex-shrink: 0;
+    padding: 0px 3px;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.BottomExtended-Region-ItemIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.BottomExtended-Region-ItemText {
+    font-weight: bold;
+    color: rgb(13, 13, 13);
+
+    font-size: 13px;
+    text-align: left;
+    line-height: 18px;
+    justify-content: flex-start;
+    margin-top: 4px;
 }
