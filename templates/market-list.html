@@ -1,65 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../static/css/market-list-category-listed.css">
 </head>
+
 <body>
     <!-- 나중에헤더 복붙 -->
 
-    <main class="main">
-        <!-- 카테고리 -->
-        <div class="market-category-section">      
-            <div class="category-wrapper">
-                <div id="category-container">
-                    <div class="region-list">
-                        <!-- 서울 -->
-                        <div class="category-tab">
-                            <div class="tab-header seoul">
-                                <div class="tab-name">서울</div>
-                                <div class="tab-arrow">▼</div>
-                            </div>
-                            <div class="tab-button">
-                                <div class="dropdown-market all-seoul">전체보기</div>
-                                <div class="dropdown-market">무슨시장</div>
-                                <div class="dropdown-market">무슨시장</div>
-                                <div class="dropdown-market">무슨시장</div>
-                                <div class="dropdown-market">무슨시장</div>
-                                <div class="dropdown-market">무슨시장</div>
-                            </div>
+    <main>
+        <!-- 메인 전체화면 -->
+        <div class="container">
+            <div class="category-container">
+                <div class="region-list">
+                    <div class="category-each-box">
+                        <!-- 전체지역, 누르면 전체시장 목록 페이지 -->
+                        <div class="region-icon">
+                            <img src="../static/images/Korea_Map.svg.png">
                         </div>
-
-                        <!-- 경기도 -->
-                        <div class="category-tab">
-                            <div class="tab-header gyeonggi">
-                                <div class="tab-name">경기</div>
-                                <div class="tab-arrow">▼</div>
-                            </div>
-                            <div class="tab-button">
-                                <div class="dropdown-market">전체보기</div>
-                                <div class="dropdown-market">시장1</div>
-                                <div class="dropdown-market">시장2</div>
-                                <div class="dropdown-market">시장3</div>
-                            </div>
+                        <div class="region-text">전체</div>
+                    </div>
+                    <!-- 서울 -->
+                    <div class="category-each-box selected">
+                        <div class="region-icon seoul">
+                            <img src="../static/images/seoul.svg">
                         </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">서울</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
 
-                        <!-- 인천 -->
-                        <div class="category-tab">
-                            <div class="tab-header incheon">
-                                <div class="tab-name">인천</div>
-                                <div class="tab-arrow">▼</div>
+                    <!-- 경기도 -->
+                    <div class="category-each-box">
+                        <div class="region-icon gyeonggi">
+                            <img src="../static/images/gyeonggi.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">경기</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+
+                    <!-- 인천 -->
+                    <div class="category-each-box">
+                        <div class="region-icon incheon">
+                            <img src="../static/images/incheon.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">인천</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+
+                    <!-- 강원 -->
+                    <div class="category-each-box">
+                        <div class="region-icon gangwon">
+                            <img src="../static/images/gangwon.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">강원</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+
+                    <!-- 충북 -->
+                    <div class="category-each-box">
+                        <div class="region-icon chungbuk">
+                            <img src="../static/images/chungbuk.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">충북</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 충남 -->
+                    <div class="category-each-box">
+                        <div class="region-icon chungnam">
+                            <img src="../static/images/chungnam.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">충남</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 대전 -->
+                    <div class="category-each-box">
+                        <div class="region-icon daejeon">
+                            <img src="../static/images/daejeon.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">대전</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 경북 -->
+                    <div class="category-each-box">
+                        <div class="region-icon gyeongbuk">
+                            <img src="../static/images/gyeongbuk.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">경북</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 경남 -->
+                    <div class="category-each-box">
+                        <div class="region-icon gyeongnam">
+                            <img src="../static/images/gyeongnam.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">경남</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 부산 -->
+                    <div class="category-each-box">
+                        <div class="region-icon busan">
+                            <img src="../static/images/busan.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">부산</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 울산 -->
+                    <div class="category-each-box">
+                        <div class="region-icon ulsan">
+                            <img src="../static/images/ulsan.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">울산</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 대구 -->
+                    <div class="category-each-box">
+                        <div class="region-icon daegu">
+                            <img src="../static/images/daegu.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">대구</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 전북 -->
+                    <div class="category-each-box">
+                        <div class="region-icon jeonbuk">
+                            <img src="../static/images/jeonbuk.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">전북</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 전남 -->
+                    <div class="category-each-box">
+                        <div class="region-icon jeonnam">
+                            <img src="../static/images/jeonnam.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">전남</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 광주 -->
+                    <div class="category-each-box">
+                        <div class="region-icon gwangju">
+                            <img src="../static/images/gwangju.svg">
+                        </div>
+                        <div class="name-arrow-box">
+                            <div class="region-text">광주</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <!-- <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div> -->
+                    </div>
+                    <!-- 제주 -->
+                    <!-- <div class="category-tab">
+                        <div class="tab-header seoul">
+                            <div class="tab-name">제주</div>
+                            <div class="tab-arrow">▼</div>
+                        </div>
+                        <div class="tab-button">
+                            <div class="dropdown-market all-seoul">전체보기</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                            <div class="dropdown-market">무슨시장</div>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+            <div class="page-container">
+                <div class="divider-wrapper">
+                    <div class="divider">
+                        <div class="selected-region-in-divider">서울특별시</div>
+                        <div class="count-orderby-button-box">
+                            <div class="market-count">
+                                <span>ㅇㅇ(서버등록)개의 장터가 있습니다.</span>
                             </div>
-                            <div class="tab-button">
-                                <div class="dropdown-market">전체보기</div>
-                                <div class="dropdown-market">신포국제시장</div>
-                                <div class="dropdown-market">부평깡통시장</div>
-                            </div>
+                            <div class="orderby"></div>
                         </div>
                     </div>
                 </div>
+                <div class="page-wrapper">
+
+                </div>
             </div>
         </div>
-    </main>                    
 </body>
+
 </html>
