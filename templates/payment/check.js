@@ -21,16 +21,16 @@ test.addEventListener(
     "mouseover",
     function (event) {
         // highlight the mouseover target
-        event.target.style.color = "red";
+        event.target.style.backgroundColor = "#e5e7eb";
     },
-    false
+    false,
 );
 
 test.addEventListener(
     "mouseout",
     function (event) {
         // highlight the mouseout target
-        event.target.style.color = "black";
+        event.target.style.backgroundColor = "";
     },
-    false
+    false,
 );
