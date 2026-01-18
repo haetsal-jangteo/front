@@ -72,17 +72,27 @@ html {
     tab-size: 4;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-variation-settings: normal;
+    overflow-y: scroll;
 }
 
 body {
-    font-family: "Pretendard";
+    font-family: inherit;
 }
 
 main {
     background-color: white;
 }
 
-img {
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.region-icon img {
     width: 25px;
     height: 25px;
 }
@@ -105,20 +115,22 @@ img {
     max-width: 1160px;
     width: 100%;
     position: relative;
-    align-items: center;
     padding: 20px 0px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .region-list {
-    padding: 0px 0px;
+    flex-wrap: wrap;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     max-width: 1160px;
     width: 100%;
-    gap: 8px;
+    gap: 10px;
 }
 
 .category-each-box {
+    min-width: 49px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,11 +138,10 @@ img {
     height: 70px;
     padding: 0px 3px;
     cursor: pointer;
-    width: 64px;
-    margin-right: 10px;
+    width: 63px;
     border: 1px solid #e4e4e4;
     border-radius: 16px;
-    transition: all 0.2s;
+    transition: all 0.3s 0s;
 }
 
 .category-each-box:hover {
@@ -141,6 +152,8 @@ img {
 .selected {
     background-color: blanchedalmond;
     border-color: blanchedalmond;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .selected> :nth-child(2)> :nth-child(1) {
@@ -186,7 +199,7 @@ img {
 
 .divider {
     padding: 0px 1%;
-    margin: 0px 0px 30px;
+    margin: 0px 0px 10px;
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -215,5 +228,141 @@ img {
 }
 
 .orderby {
+    display: flex;
+    width: 70px;
+    height: 27px;
+    padding: 7px 5px;
     position: absolute;
+    right: 0px;
+    bottom: -18px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.orderby div {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.market-category-wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.market-category-wrapper div {
+    min-width: 66px;
+    height: 25px;
+    width: 70px;
+    margin-top: 20px;
+    font-size: 13px;
+    text-align: center;
+    text-justify: center;
+}
+
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.market-card-wrapper {
+    min-width: 136px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s 0s;
+    padding: 20px 10px 5px;
+    width: 25%;
+}
+
+
+.market-card {
+    transition: all 0.2s 0s;
+}
+
+.market-card:hover {
+    transform: translateY(-6px)
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.like-button {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: 7px;
+    right: 2px;
+    z-index: 10;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.card-market-category {
+    font-size: 12px;
+    color: #FF6F00;
+    font-weight: 600;
+}
+
+.card-market-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1c1c1c;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 13px;
+    height: 58.5px;
+    color: #757575;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-info-line {
+    margin: 7px 0px;
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.card-guide {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.guide-location, .guide-hour {
+    display: flex;
+    gap: 40px;
+    margin: 2px 0px;
+}
+
+.location, .hours {
+    width: 80px;
+    color: #757575;
+}
+
+.market-location, .card-business-hour {
+    color: #1c1c1c;
+    font-size: 13px;
 }
